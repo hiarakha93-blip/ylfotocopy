@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YL Fotocopy Medan</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+.hero{
+     scroll-behavior: smooth; /* Scroll halus */
+        }
+        /* NAVBAR ATLANTA STYLE */
+        .navbar{
+            transition: 0.4s ease;
+            background: transparent !important;
+            padding: 1.5rem 0;
+        }
+        .navbar.scrolled{
+            background: #0d6efd !important;
+            padding: 0.7rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,.2);
+        }
+        .navbar-brand, .nav-link{
+            color: white !important;
+            font-weight: 600;
+        }
+        .navbar-brand{
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .nav-link:hover{
+            color: #ffd43b !important;
+        }
+
+        /* HERO FULL LAYAR */
+        .hero{
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(13,110,253,0.7)), url('https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80') no-repeat center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        * BUAT TULISAN BESAR */
+        body {
+          font-size: 18px;
+          line-height: 1.8;
+
+
+        /* BUAT SECTION TENTANG */
+            #tentang {
+              text-align: center; /* rata tengah */
+              padding-top: 80px;
+              padding-bottom: 80px;
+        }
+
+          #tentang h2 {
+          font-size: 2.5rem; /* judul gede */
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #004aad; /* biru atlanta */
+        }
+
+          #tentang p {
+          font-size: 1.1rem; /* isi paragraf lebih gede */
+          max-width: 800px; /* biar gak kepanjangan ke samping */
+          margin: 0 auto 15px auto; /* rata tengahin paragraf */
+        }
+
+          /* BUAT LIST CEKLIS */
+          #tentang ul {
+          list-style: none;
+          padding: 0;
+          font-size: 1.1rem;
+        }
+          #tentang ul li {
+          margin-bottom: 10px;
+        }
+
+        .card{
+            transition: 0.3s;
+            border: none;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+            padding:30px;
+            text-align:center;
+      }
+
+footer{
+    background:#212529;
+    color:white;
+    padding:20px;
+    text-align:center;
+  }
+
+    .card{
+      transition: 0,5;
+
+      .card:hover{
+        transform: translateY(8px);
+        box-shadow: 0 10px rgba(0,0,0,0.2);
+
+      }
+      .navbar{
+    transition:0.4s ease;
+    background:transparent;
+    padding: 1.2rem 0;
+}
+
+.navbar.scrolled{
+    background:#0d6efd;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    padding: 0.7rem 0;
+}
+
+.navbar-brand,
+.nav-link{
+    color:white !important;
+    font-weight:600;
+    font-size: 1.1rem;
+}
+
+.navbar-brand{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color:#ffd43b !important;
+}
+}
+.tentang-container{
+  max-width: 800px;
+  margin: 60px  auto;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.7;
+  color: #333;
+}
+.keunggulan-wrapper{
+  text-align: center;
+}
+.keunggulan {
+  list-style: none;
+  padding-left: 0;
+  margin:20px auto;
+  max-width: 420px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  }
+
+  .keunggulan li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+
+  .keunggulan li::before {
+    content: " ☑️ ";
+    margin-right: 22px;
+  }
+
+.btn-wa{
+  display:block;
+  width: fit-content;
+  margin: 25px auto 0;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background-color: #25D366; /* Warna hijau WA */
+  color: white;
+  text-decoration: none; /* Biar gak ada garis bawah */
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50px; /* Biar ujungnya bulat */
+  transition: 0.3s;
+}
+
+.btn-wa:hover{
+  background-color: #1DA851; /* Warna jadi lebih gelap pas disentuh mouse */
+  transform: scale(1.05); /* Agak ngebesar dikit */
+}
+  testimoni h2 {
+  color: #f8f9fa; /* Ungu tema kamu */
+  margin-bottom: 40px;
+}
+
+.testimoni-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Biar turun ke bawah kalau di HP */
+}
+
+.testimoni-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 320px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(123, 47, 247, 0.08);
+  border-left: 4px solid #9f5cf2; /* Garis ungu di kiri */
+  transition: transform 0.3s ease;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-5px); /* Naik dikit pas di hover */
+}
+
+.testimoni-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimoni-card h4 {
+  color: #7b2ff7; /* Nama ungu */
+  font-size: 16px;
+  margin: 0;
+}
+
+</style>
+</head>
+<!-- NAVBAR-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+<body>
+<<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">YL Fotocopy Medan</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#kontak">harga</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO BESAR KAYAK ATLANTA -->
+<section class="hero text-center text-white d-flex align-items-center">
+  <div class="container" data-aos="zoom-in">
+
+<!-- Hero -->
+<section id="tentang" class="py-5 bg-white">...</section>
+  <div class="container">
+    <h1 class ="fw-bold display -4">YL Fotocopy Medan</h1>
+    <p class="lead"> cepat, rapi, dan terpercaya</p>
+    <a href="#layanan" class="btn btn-warning btn-lg mt-3 fw-bold">Lihat Layanan</a>
+  </div>
+</section>
+
+
+
+
+<section id="tentang" class="bg-white">
+  <div class="container">
+    <h2>Tentang YL Fotocopy Medan</h2>
+    
+    <p class="fw-bold">Toko YL Fotocopy Medan</p>
+    <p>Kami fokus memberikan layanan cetak dan fotocopy cepat, rapi, dan harga bersahabat untuk mahasiswa, kantor, dan UMKM di medan.</p>
+    <p>YL Fotocopy Medan menyediakan layanan fotokopi, print, scan, laminating, dan penjilidan untuk kebutuhan pelajar, mahasiswa, dan masyarakat umum.</p>
+
+    <ul class="mt-4">
+      <li>✅ proses cepat tunggu 5 menit jadi</li>
+      <li>✅ hasil cetakan warna tajam & jernih</li>
+      <li>✅ buka setiap hari 08.00 - 21.00 WIB</li>
+      <li>✅ lokasi strategis di pusat kota medan</li>
+    </ul>
+  </div>
+</section>
+
+<section id="layanan" class="py-5 " data-aos="fade-up">...</section>
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Layanan unggulan kami</h2>
+
+    <div class="row">
+
+      <!--card 1 fotocopy-->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 text-center h-100">
+          <img src="toko.fotocopy.jpg" class="card-img-top"alt="fotocopy">
+          <div class="card-body">
+            <h5>Fotokopy</h5>
+            <p>melayani Fotokopy hitam putih dan warna dengan hasil yang jelas dan berkualitas.</p>
+            <p class="fw-bold text-danger">Rp.500/lembar
+          </div>
+        </div>
+      </div>
+
+      <!--card 2 print dokumen-->  
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 text-center h-100">
+           <img src="print.dokumen.jpg" class="card-img-top" alt="print dokumen">
+            <div class="card-body">
+            <h5>Print Dokumen</h5>
+            <p>Print tugas, laporan, proposal, dan skripsi.</p>
+             <p class="fw-bold text-danger">Rp.1000/lembar
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!--laminating-->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0 text-center h-100">
+           <img src="laminating.dan jilid.jpg" class="card-img-top" alt="laminating">
+            <div class="card-body">
+            <h5>Laminating & Jilid</h5>
+            <p>Laminating dan penjilidan rapi serta cepat.</p>
+            <p class="fw-bold text-danger">Rp.5.000/lembar
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- HARGA -->
+<section id="harga" class="bg-light" data-aos="fade-up">
+  <div class="container">
+    <h2>Daftar Harga</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <table class="table table-bordered text-center shadow">
+          <thead class="table-primary"><tr><th>Layanan</th><th>Harga</th></tr></thead>
+          <tbody>
+            <tr><td>Fotocopy A4 Hitam Putih</td><td>Rp 500 / lembar</td></tr>
+            <tr><td>Fotocopy A4 Warna</td><td>Rp 2.000 / lembar</td></tr>
+            <tr><td>Print A4 Hitam Putih</td><td>Rp 500 / lembar</td></tr>
+            <tr><td>Laminating A4</td><td>Rp 5.000 / lembar</td></tr>
+            <tr><td>Jilid Skripsi Soft Cover</td><td>Rp 15.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimoni" class="bg-light py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Apa Kata Mereka? ⭐</h2>
+    <div class="row text-center">
+      
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="card-text">"Cepat banget! 100 lembar 10 menit jadi. Murah juga."</p>
+            <h5 class="fw-bold mt-3">- Budi, Mahasiswa USU</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="card-text">"Print warna nya jernih banget. Cocok buat tugas presentasi."</p>
+            <h5 class="fw-bold mt-3">- Sari, Guru</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <p class="card-text">"Buka sampai malam. Penyelamat pas kejar deadline."</p>
+            <h5 class="fw-bold mt-3">- Andi, Freelancer</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- KONTAK -->
+<section id="kontak" class="py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+    <a href="https://wa.me/6283180040167" target="_blank" class="btn btn-success btn-lg mb-3">💬 Chat via WhatsApp</a>
+    <p class="fw-bold">Jam Buka: Senin - Sabtu | 08.00 - 21.00</p>
+    <p>Alamat: Jl. sekip NO.50., Medan</p>
+  </div>
+</section>
+
+
+        <!-- FORM TARUH DISINI -->
+        <form class="row g-3 mt-3 text-start">
+          <div class="col-md-6"><input type="text" class="form-control" placeholder="Nama"></div>
+          <div class="col-md-6"><input type="email" class="form-control" placeholder="Email"></div>
+          <div class="col-12"><textarea class="form-control" rows="3" placeholder="Pesan"></textarea></div>
+          <div class="col-12"><button class="btn btn-primary">Kirim Pesan</button></div>
+        </form>
+      
+</a>
+  </div>
+
+
+
+    <!-- LOKASI-->
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0!2d98.657!3d3.579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303130!2sJl.%20Sekip%20No.50K%20Medan!5e0!3m2!1sid!2sid!4v1234567890" 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 12px; margin-top: 20px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+<!-- Footer -->
+<footer>
+  <p>© 2026 YL Fotocopy Medan  |  yusianilaoli617@gmail.com</p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<!-- TARUH KODE AOS DI SINI -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
